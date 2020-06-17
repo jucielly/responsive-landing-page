@@ -164,30 +164,58 @@ body {
   font-weight: 300;
 }
 
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+  }
 
-@media(max-width: 1024px) {
-    .grid {
-        grid-template-columns:  1fr;
-        grid-template-areas: "content";
-    }
+  .grid-video {
+    grid-template-columns: 1fr;
+    grid-template-areas: "video" "benefits";
+  }
 
-    .grid-video {
-        grid-template-columns: 1fr ;
-        grid-template-areas: "video" "benefits";
-    }
+  .grid-video video {
+    justify-self: center;
+  }
 
-    .grid-video video {
-        justify-self: center;
-    }
+  .grid-benefit-detail {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
-
-    .grid-benefit-detail {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    .benefits-section {
-        margin-top: 2rem;
-        margin-left: 0;
-        justify-self: center;
-    }
+  .benefits-section {
+    margin-top: 2rem;
+    margin-left: 0;
+    justify-self: center;
+  }
 }
+
+/*----------------tablet----------------*/
+@media (max-width: 768px) {
+  .grid-benefit-detail {
+    grid-template-columns: 1fr;
+  }
+  .email-form {
+    flex-direction: column;
+  }
+  .email-form {
+    max-width: initial;
+  }
+
+  .email-form input {
+      margin-right: 0;
+      margin-bottom: 10px;
+      max-width: 100%;
+  }
+
+  .benefit {
+      font-size: 2rem;
+  }
+
+  .benefit img {
+      height: 2rem;
+      margin-right: 1rem;
+  }
+}
+
+
