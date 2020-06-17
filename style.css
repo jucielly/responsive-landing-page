@@ -163,3 +163,31 @@ body {
   color: #444;
   font-weight: 300;
 }
+
+
+@media(max-width: 1024px) {
+    .grid {
+        grid-template-columns:  1fr;
+        grid-template-areas: "content";
+    }
+
+    .grid-video {
+        grid-template-columns: 1fr ;
+        grid-template-areas: "video" "benefits";
+    }
+
+    .grid-video video {
+        justify-self: center;
+    }
+
+
+    .grid-benefit-detail {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .benefits-section {
+        margin-top: 2rem;
+        margin-left: 0;
+        justify-self: center;
+    }
+}
