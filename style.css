@@ -12,6 +12,18 @@ body {
   grid-template-areas: ". content content content content .";
 }
 
+.grid-video {
+    margin-top: 50px;
+    align-items: center;
+    grid-template-areas: "video video video benefits benefits benefits";
+}
+
+.grid-video video {
+    grid-area: video;
+    width: 100%;
+    max-width: 900px;
+}
+
 .content {
   grid-area: content;
   max-width: 1000px;
@@ -110,4 +122,14 @@ body {
 .email-form button:hover,
 .email-form button:focus {
   background-color: #333;
+}
+
+
+.benefits-section {
+  grid-area: benefits;
+  margin-left:  3rem;
+}
+
+.benefit {
+    padding: 30px;
 }
