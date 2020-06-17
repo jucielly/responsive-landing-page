@@ -219,3 +219,43 @@ body {
 }
 
 
+@media(max-width: 425px) {
+    .brand-name{
+        display: none;
+    }
+
+    .logo {
+        margin-top: 1rem;
+    }
+
+    .email-form {
+        margin: 0;
+        font-size: 1.25rem;
+    }
+
+    .benefit {
+        font-size: 1.25rem;
+
+    }
+
+    .benefit img {
+        height: 1.25rem;
+        margin-right: .5rem;
+    }
+
+    .benefit-detail-title {
+        font-size: 1.25rem;
+    }
+
+    .benefit-detail-text {
+        font-size: 1.15rem;
+    }
+
+    .benefit-detail {
+        margin: 1rem;
+    }
+
+    .grid-benefit-detail {
+        margin-top: 1rem;
+    }
+}
