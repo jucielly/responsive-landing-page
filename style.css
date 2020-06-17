@@ -1,0 +1,30 @@
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  grid-template-areas: ". content content content content .";
+}
+
+.content {
+  grid-area: content;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.dark-header {
+  background-color: #005681;
+  color: white;
+}
+
+.brand-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
